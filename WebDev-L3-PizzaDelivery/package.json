@@ -1,0 +1,21 @@
+{
+  "name": "webdev-l3-pizza-delivery",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack pizza delivery app (React + Express + MongoDB + Socket.io + Razorpay) \u2014 Oasis Infobyte Level 3",
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n server,client -c blue,magenta \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "start": "npm --prefix server start",
+    "build": "npm --prefix client run build",
+    "seed": "npm --prefix server run seed",
+    "stock:alert": "npm --prefix server run stock:alert",
+    "test:api": "bash tests/api-smoke.sh",
+    "test:socket": "node tests/socket-check.mjs",
+    "test": "npm run test:api && npm run test:socket"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "socket.io-client": "^4.8.1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "pizza-delivery-client",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "React + Vite SPA for the pizza delivery app",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
+    "vite": "^5.4.11"
+  }
+}
